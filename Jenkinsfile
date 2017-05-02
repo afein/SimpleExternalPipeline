@@ -1,4 +1,7 @@
 #!groovy
+
+properties([pipelineTriggers([pollSCM('* * * * * *')])])
+
 node() {
    
    stage('CHECKOUT') { 
